@@ -1,0 +1,51 @@
+<view>
+   <image src='../../img/bgimg.jpg'style='width:100%;height:{{screenheight}}px'></image>
+</view>
+<view class='head'>
+   <image src='{{userInfo.avatarUrl}}' style='width:100%;height:100%;border-radius:50%;'></image>
+</view>
+<view class='name'>{{userInfo.nickName}}</view>
+
+<form bindsubmit="login" report-submit="{{true}}"class='question'>  
+    <button formType="submit" class='goquest'>开始出题</button>  
+</form>  
+
+<view class='pick'>
+    <view>
+       <form bindsubmit="login" report-submit="{{true}}">  
+           <button formType="submit" class='goquest'>出题记录</button>  
+        </form>
+    </view>
+    <view>|</view>
+    <view>
+        <form bindsubmit="login" report-submit="{{true}}">  
+           <button formType="submit" class='goquest'>答题记录</button>  
+        </form>
+    </view>
+    <view>|</view>
+    <view>
+        <form bindsubmit="login" report-submit="{{true}}">  
+           <button formType="submit" class='goquest'>联系客服</button>  
+        </form>
+    </view>
+    <view>|</view>
+    <view>
+        <form bindsubmit="login" report-submit="{{true}}">  
+           <button formType="submit" class='goquest'>付费详情</button>  
+        </form>
+    </view>
+</view>
+<view class='iconfont .icon-wenhao help' bindtap='help'></view>
+<view class='helpview' style='height:{{screenheight}}px' hidden='{{helpt}}'>
+    <view class="Introduction">
+       <view class='helptitle'>玩法介绍</view>
+       <view class='helptext'>
+           从题库中随机选择10道题，并勾选出最适合自己的答案，出完后分享给好友作答，看好友能否答对你的正确选项，测试和好友之间的默契值
+       </view>
+       <view class='yes' bindtap='know'>确定</view>
+    </view>
+</view>
+<view class='complaint' bindtap='jump_complaint'>
+   <text class=' iconfont .icon-tousu1'></text>
+   <text>投诉</text>
+</view>

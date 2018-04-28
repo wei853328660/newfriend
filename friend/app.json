@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/complaint/complaint",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor":"#FDDC41",
+    "navigationBarTitleText": "默契好友大考验",
+    "navigationBarTextStyle":"black"
+  }
+}

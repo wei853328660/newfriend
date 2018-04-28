@@ -1,0 +1,19 @@
+<view class='head'>
+   请选择投诉原因
+</view>
+<block wx:for="{{chooses}}" wx:key="lo">
+    <view class='choose' bindtap='click' data-num='{{index}}'>
+       <text>{{item.text}}</text>
+       <text class="yes" hidden='{{item.hid}}'>√</text>
+    </view>
+</block>
+<view class="phone">
+    请填写您的手机号，方便我们联系您
+</view>
+<view class='phones'>
+  
+    手机号  <input placeholder="选填"type="number" class='phoneinput'></input>
+  
+</view>
+
+<view class='report' bindtap='report'>确认投诉</view>
